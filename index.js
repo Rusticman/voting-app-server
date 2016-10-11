@@ -7,11 +7,9 @@ const router = require('./router');
 const mongoose = require('mongoose');
 const cors = require('cors');
 
-const config = require('./config');
 
 
-
-mongoose.connect(config.mongodb_url);
+mongoose.connect(process.env.MONGODB_URL);
 
 app.use(morgan('combined'));
 app.use(cors());
