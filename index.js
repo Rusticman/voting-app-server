@@ -7,7 +7,7 @@ const router = require('./router');
 const mongoose = require('mongoose');
 const cors = require('cors');
 
-console.log('connect address',process.env)
+console.log('connect to',process.env.MONGODB_URL)
 
 mongoose.connect(process.env.MONGODB_URL);
 
