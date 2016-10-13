@@ -9,6 +9,7 @@
     "start": "index.js"
   },
   "author": "Rusticman",
+   "engine": "node 4.5.0",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.2",
