@@ -1,5 +1,5 @@
 
-require('dotenv').config();
+
 const CreatePoll = require('./controllers/create_poll_controller');
 const MyPolls = require('./controllers/my_polls_controller');
 const ShowPoll = require('./controllers/show_poll_controller');
