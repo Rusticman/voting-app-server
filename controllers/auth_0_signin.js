@@ -48,13 +48,8 @@ const user = new User({
   polls        : [],
   votedFor: [],
   itemCreated: [],
-  twitter:{
-    id:userID
-  },
-  facebook:{
-    id:''
-  }
-});
+  [query]:userID
+});//the query saves the user's unique twitter of fb ID
 
 user.save(function(err){
   if(err){
